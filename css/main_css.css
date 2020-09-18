@@ -1,0 +1,364 @@
+/*start Global */
+
+*{
+    /* to fix sizing problem, it doesn't calc the padding so the element became side by sid*/
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body {
+    font-family:sans-serif;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* end Global*/
+
+/*start navbar*/
+.navbar {
+    font-size: 20px;
+    height: 0px;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.navbar .brand {
+    float: left;
+    width: 50%;
+    font-weight: normal
+}
+.navbar .links {
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+    font-size: 17px 
+    
+    
+}
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 0px 10px;
+    border-bottom: solid 2px transparent;
+}
+.navbar .links li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar .links li.active a ,
+.navbar .links li a:hover{
+     color: #2db4cd;
+     
+}
+.navbar .links li.active,
+.navbar .links li:hover{
+    border-bottom: solid 2px #2db4cd;
+    
+}
+
+/*end navbar*/
+
+.clearfix{
+    clear: both;
+}
+
+/*start header*/
+.header{
+    background: url(../images/headerpro.jpeg) no-repeat scroll 100% 80% ;
+    position: relative;
+    
+}
+.header h2 {
+    color: #2db4cd;
+    font-weight: 100;
+    font-family: monospace
+}
+.header .overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.header .bx-wrapper{
+    height: 100%;
+    
+}
+.header .bx-wrapper .bx-viewport{
+    box-shadow: none;
+    border: 0;
+    color: white;
+    text-align: center;
+    background: none;
+    height: 100% !important
+        
+}
+.header .slider{
+    height: 100%
+}
+.header .slider li{
+    display: block;
+   
+}
+.header .slider li h2{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 10px;  
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.header .slider li p{
+    font-size: 20px
+}
+/* the second part*/
+
+.services{ 
+    padding: 20px
+}
+.services h2{
+    
+    margin: 0 0 50px;
+    font-weight: normal
+}
+.special-heading{
+    font-weight: normal;
+    padding: 50px 0 0 0;
+    position: relative;
+    
+}
+.special-heading:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 86px;
+    width: 45px;
+    border-bottom: 2px solid #333;
+    font-weight: normal;
+    
+}
+/*start our services*/
+
+.services .item{
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 20px;
+}
+.services .item i {
+    float: left;
+    width: 18%;
+    margin-right: 7%;
+    color: #2db4cd;
+    margin-top: 15px;
+    font-weight:600;
+}
+.services .item .info {
+    float: left;
+    width: 75%
+}
+.services .item .info h3 {
+    font-weight: normal;
+    color: #212121;
+    font-size: 17px;
+    
+}
+.services .item .info p {
+    font-size: 14px;
+    
+}
+.separator {
+    border: 1px solid #1EEE;
+    display: block;
+    margin: 40px 0
+}
+.our-team .box {
+    float: left
+}
+.our-team .box:first-child {
+    width: 35%;
+}
+.our-team .box:not(:first-child) {
+    width: 15.25%;
+    margin-left: 1%;
+    position: relative
+   
+}
+.our-team .box:not(:first-child) .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.6)
+    
+}
+.our-team .box:not(:first-child) img {
+    width: 100%;
+}
+.our-team .box h2 {
+    font-weight:normal;
+    margin-top: -42px;
+    margin-bottom: 48px;
+    padding-top: 44px
+}
+.our-team .box p {
+    color: #888;
+    line-height: 1.5;
+    font-size: 15px
+}
+/*Start testimonials*/
+.testim {
+    background: url(../images/13.jpg);
+    height: 400px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
+    margin: 50px 0;
+    display: block
+}
+.testim .t-overlay {
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+.testim h2 {
+    padding: 26px 0;
+    font-weight: 100;
+    
+}
+.testim q {
+    display: block;
+    margin: 29px 0px;
+    font-size: 16px;
+    line-height: 2;
+    color: #888;
+}
+.testim p {
+    color: #2db4cd;
+    margin: 30px 0;
+    font-size: 20px
+}
+.testim .slider-tow > div {
+    display: none
+}
+.testim .slider-tow .active {
+    display: block
+}
+
+/*End testimonials*/
+
+
+/*start our project*/
+
+.our-project {
+    margin: 50px 0;
+}
+.our-project ul {
+    margin-top: 34px
+}
+.our-project ul li{
+    display: inline-block;
+    border: 2px solid #dddddd;
+    color: #b0a5a5;
+    border-radius: 8px;
+    padding: 11px;
+    margin: 1px;
+    font-size: 14px
+}
+.our-project ul li.selected {
+    background-color: #2db4cd;
+    color: #FFF;
+    border-color: #2db4cd
+}
+.our-project .gallery {
+    margin-top: 50px;
+    overflow: hidden
+}
+.our-project .gallery .row img:nth-child(2) {
+    margin-left: 1%;
+    margin-right: 1%
+}
+.our-project .gallery img {
+    float: left;
+    width: 32.666666%;
+    margin-bottom: 12px
+}
+/*end our project*/
+
+/*start footer*/
+.footer {
+    background-color: #232323;
+    color: #EEE;
+    padding: 40px 0;
+    overflow: hidden;
+    color: #6a6a6a;
+    font-weight: 200
+}
+.footer .col {
+    float: left;
+    color: #FFF;
+    width: 25%;
+    color: #6a6a6a;
+    font-weight: 200
+}
+.footer .col h2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFF
+    
+}
+.footer .col p {
+    line-height: 1.6;
+    margin-top: 18px;
+}
+.footer .tags span {
+    display: inline-block;
+    border: 1px solid #898989;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #a8a6a6
+    
+}
+.footer .copyright {
+    margin-top: 40px;
+}
+
+/*end footer*/
+/* media query */
+@media(max-width: 767px){
+    .container {
+        max-width: 400px;
+        word-wrap: break-word;
+    }
+}
+
+
+
+
+
+
